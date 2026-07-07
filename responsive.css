@@ -1,0 +1,93 @@
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 992px){
+
+    h1{
+        font-size:48px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    p{
+        font-size:18px;
+    }
+
+    .container{
+        width:92%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:38px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    h3{
+        font-size:22px;
+    }
+
+    p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .container{
+        width:94%;
+        padding:40px 0;
+    }
+
+    .button-group{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+        width:220px;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:480px){
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:250px;
+        padding:14px;
+    }
+
+    img{
+        border-radius:15px;
+    }
+
+}

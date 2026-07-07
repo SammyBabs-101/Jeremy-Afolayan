@@ -1,0 +1,137 @@
+/* ==========================
+   ANIMATIONS
+========================== */
+
+/* Floating Animation */
+@keyframes floating{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* Glow Effect */
+@keyframes glow{
+    0%{
+        box-shadow:0 0 10px gold;
+    }
+    50%{
+        box-shadow:0 0 35px gold;
+    }
+    100%{
+        box-shadow:0 0 10px gold;
+    }
+}
+
+/* Zoom In */
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* Fade Up */
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Bounce */
+
+@keyframes bounce{
+
+0%,20%,50%,80%,100%{
+transform:translateY(0);
+}
+
+40%{
+transform:translateY(-20px);
+}
+
+60%{
+transform:translateY(-10px);
+}
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* Rotate */
+
+@keyframes rotateSlow{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+/* Animation Classes */
+
+.floating{
+animation:floating 4s ease-in-out infinite;
+}
+
+.glow{
+animation:glow 2s infinite;
+}
+
+.zoom{
+animation:zoomIn 1s ease;
+}
+
+.fade-up{
+animation:fadeUp 1s ease;
+}
+
+.bounce{
+animation:bounce 2s infinite;
+}
+
+.pulse{
+animation:pulse 2s infinite;
+}
+
+.rotate{
+animation:rotateSlow 15s linear infinite;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎉 Happy Birthday Jeremy Afolayan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- AUDIO -->
+<audio id="birthdaySong" loop>
+    <source src="music/happy-birthday-simi.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MUSIC BUTTON -->
+<button id="musicBtn">🎵 Play Music</button>
+
+<!-- STARS -->
+<div id="stars"></div>
+<div id="sparkles"></div>
+<script>
+
+</script>
+
+<!-- ================= LOADING ================= -->
+
+<section class="page active" id="loading">
+
+<div class="gift">🎁</div>
+<canvas id="fireworks"></canvas>
+
+<div id="confetti"></div>
+<h1>Happy Birthday</h1>
+
+<h2>Jeremy Afolayan</h2>
+
+<p>Preparing something special just for you...</p>
+
+<div class="loader">
+
+<div class="progress"></div>
+
+</div>
+
+</section>
+
+<!-- ================= WELCOME ================= -->
+
+<section class="page" id="welcome">
+
+<img src="images/cover.jpg" class="cover" alt="Jeremy">
+
+<h1>🎉 Happy Birthday</h1>
+
+<h2>Jeremy Afolayan</h2>
+
+<p>
+
+From the very first day I stepped into this house, you've been nothing but kind, intelligent, caring, and supportive.
+
+Today is all about celebrating YOU.
+
+</p>
+
+<button class="btn" onclick="beginJourney()">
+    ❤️ Begin The Journey ❤️
+</button>
+
+</button>
+
+</section>
+<div id="specialMessage" class="special-message">
+    🎁 Jeremy...<br>
+    This surprise was made specially for you.
+</div>
+<!-- ================= LETTER ================= -->
+
+<section class="page" id="letter">
+
+<h1>💌 A Letter For You</h1>
+
+<div id="letterText"></div>
+
+<div class="nav">
+
+<button class="btn" onclick="prevPage()">
+
+⬅ Previous
+
+</button>
+
+<button class="btn" onclick="nextPage()">
+
+Next ➜
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= MEMORIES ================= -->
+
+<section class="page" id="memories">
+
+<h1>📸 Beautiful Memories</h1>
+
+<div class="gallery-container">
+
+    <img id="galleryImage"
+         src="images/jeremy1.jpg"
+         class="galleryImage">
+
+</div>
+
+<h2 id="galleryTitle">
+
+A Bright Smile 😊
+
+</h2>
+
+<p id="galleryCaption">
+
+Every smile tells a beautiful story.
+
+</p>
+
+<div class="nav">
+
+<button class="btn" onclick="prevPage()">
+
+⬅ Previous
+
+</button>
+
+<button class="btn" onclick="nextPage()">
+
+Next ➜
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= WISHES ================= -->
+
+<section class="page" id="wishes">
+
+<h1>🎂 Birthday Wishes</h1>
+
+<div id="wishCard">
+
+<h2 id="wishTitle">🎁 Wish 1</h2>
+
+<p id="wishText">
+
+May God continue to bless you with wisdom, favour, joy and success.
+
+</p>
+
+<button class="btn" onclick="nextWish()">
+
+Next Wish ❤️
+
+</button>
+<button class="btn" onclick="prevPage()">
+
+⬅ Previous
+
+</button>
+
+<button class="btn" onclick="nextPage()">
+
+Next ➜
+
+</button>
+
+</div>
+</section>
+
+<!-- ================= APPRECIATION ================= -->
+
+<section class="page" id="appreciation">
+
+<h1>❤️ Appreciation</h1>
+
+<p>
+
+Thank you for your kindness.
+
+Thank you for your support.
+
+Thank you for always being respectful.
+
+Thank you for making everyone proud.
+
+Never stop believing in yourself.
+
+Happy Birthday once again.
+
+</p>
+
+<div class="nav">
+
+<button class="btn"
+
+onclick="prevPage()">
+
+⬅ Previous
+
+</button>
+
+<button class="btn"
+
+onclick="nextPage()">
+
+Grand Finale 🎉
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= FINALE ================= -->
+
+<section class="page" id="finale">
+
+<h1>
+
+🎉 HAPPY BIRTHDAY
+
+</h1>
+
+<h2>
+
+JEREMY AFOLAYAN
+
+</h2>
+
+<h3>
+
+👑 SHOUT OUT TO MY
+
+UP AND COMING
+
+MIMIJE HEAD BOY
+
+</h3>
+
+<p>
+
+<p>
+
+May your future shine brighter than today.
+
+May every dream you carry become reality.
+
+Keep being the brilliant, caring and respectful young man that you are.
+
+The world is waiting for your greatness.
+
+<br><br>
+
+❤️ Made with Love by Sammy ❤️
+
+</p>
+
+</p>
+
+<button class="btn"
+
+onclick="restartJourney()">
+
+Celebrate Again
+
+</button>
+
+</section>
+<div id="balloons"></div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
