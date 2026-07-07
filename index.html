@@ -17,6 +17,18 @@
 
 <body>
 
+<!-- MUSIC PROMPT (modal) -->
+<div class="music-prompt" id="musicPrompt" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="prompt-box" role="document">
+    <h2>Would you like to listen to a lovely song for Jeremy?</h2>
+    <p>Play the song now?</p>
+    <div class="prompt-actions">
+      <button class="btn-yes" id="musicYes">Yes ❤️</button>
+      <button class="btn-no" id="musicNo">No 😢</button>
+    </div>
+  </div>
+</div>
+
 <!-- AUDIO -->
 <audio id="birthdaySong" loop>
     <source src="happy-birthday-simi.mp3" type="audio/mpeg">
@@ -74,8 +86,6 @@ Today is all about celebrating YOU.
 
 <button class="btn" onclick="beginJourney()">
     ❤️ Begin The Journey ❤️
-</button>
-
 </button>
 
 </section>
