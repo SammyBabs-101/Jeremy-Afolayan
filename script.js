@@ -1,7 +1,7 @@
 /* ================================
    HAPPY BIRTHDAY JEREMY
    SCRIPT PART 1
-================================ */
+=============================== */
 
 const pages = document.querySelectorAll(".page");
 let currentPage = 0;
@@ -134,7 +134,7 @@ function beginJourney(){
             nextPage();
 
             // start music here
-            document.getElementById("birthdayMusic").play();
+            document.getElementById("birthdaySong").play();
 
         },1000);
 
@@ -240,7 +240,7 @@ const gallery = [
 
 {
 
-image:"images/jeremy1.jpg",
+image:"jeremy1.jpg",
 
 title:"A Bright Smile 😊",
 
@@ -250,7 +250,7 @@ caption:"Your smile brings joy to everyone around you."
 
 {
 
-image:"images/jeremy2.jpg",
+image:"jeremy2.jpg",
 
 title:"A Brilliant Mind 📚",
 
@@ -260,7 +260,7 @@ caption:"Keep shining as the intelligent scholar that you are."
 
 {
 
-image:"images/jeremy3.jpg",
+image:"jeremy3.jpg",
 
 title:"A Bright Future 🌟",
 
