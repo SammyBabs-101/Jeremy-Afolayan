@@ -89,35 +89,60 @@ showPage(1);
 },5000);
 
 // ---------------------------
-// Music
+// Music prompt (open/close)
 // ---------------------------
 
 const music = document.getElementById("birthdaySong");
-
 const musicBtn = document.getElementById("musicBtn");
-
 let playing = false;
 
-musicBtn.addEventListener("click",()=>{
+// modal elements
+const musicPrompt = document.getElementById("musicPrompt");
+const musicYes = document.getElementById("musicYes");
+const musicNo = document.getElementById("musicNo");
 
-if(!playing){
-
-music.play();
-
-musicBtn.innerHTML="🔊 Music Playing";
-
-playing=true;
-
-}else{
-
-music.pause();
-
-musicBtn.innerHTML="🎵 Play Music";
-
-playing=false;
-
+// open the prompt (shows modal)
+function openMusicPrompt() {
+    if (!musicPrompt) return;
+    musicPrompt.setAttribute("aria-hidden", "false");
+    // move keyboard focus into modal for accessibility
+    musicYes?.focus();
 }
 
+// close the prompt (hides modal)
+function closeMusicPrompt() {
+    if (!musicPrompt) return;
+    musicPrompt.setAttribute("aria-hidden", "true");
+    // return focus to the music button
+    musicBtn?.focus();
+}
+
+// wire the main music button to open the prompt
+musicBtn.addEventListener("click", () => {
+    openMusicPrompt();
+});
+
+// Yes -> start music and close modal
+musicYes.addEventListener("click", () => {
+    music.play().catch(()=>{ /* ignore autoplay errors when blocked by browser */ });
+    musicBtn.innerHTML = "🔊 Music Playing";
+    playing = true;
+    closeMusicPrompt();
+});
+
+// No -> just close modal
+musicNo.addEventListener("click", () => {
+    closeMusicPrompt();
+});
+
+// Keep the play/pause state in sync if something else pauses the audio
+music.addEventListener("pause", () => {
+    playing = false;
+    musicBtn.innerHTML = "🎵 Play Music";
+});
+music.addEventListener("play", () => {
+    playing = true;
+    musicBtn.innerHTML = "🔊 Music Playing";
 });
 
 function beginJourney(){
